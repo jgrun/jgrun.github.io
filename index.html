@@ -9,12 +9,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<style>
+.imageBar {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  margin-top: -6%;
+}
+
+.imageBox {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+</style>
+
 <body>
   <div class="w3-top">
     <div class="w3-bar w3-black w3-large">
       <a href="./index.html" class="w3-bar-item w3-button w3-deep-orange w3-hover-deep-orange"><i class="fa fa-home"></i></a>
-      <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small">Resume</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+      <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">PROJECTS</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small">Template Button</a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" onclick="navCollapse()">&#9776;</a>
     </div>
@@ -23,6 +42,11 @@
       <a href="./cv.html" class="w3-bar-item w3-button">Resume</a>
       <a href="#" class="w3-bar-item w3-button">Projects</a>
       <a href="#" class="w3-bar-item w3-button">Template Button</a>
+    </div>
+
+    <div id="indexHeaderImage" class="imageBox">
+      <img src="./index_images/cu_alt_header.jpg" alt="Fancy CU Boulder Header" class="imageBar">
+      <p> Is this text over the image?</p>
     </div>
 
 
