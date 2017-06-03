@@ -12,20 +12,36 @@
 <body>
   <div class="w3-top">
     <div class="w3-bar w3-black w3-large">
-      <a href="#" class="w3-bar-item w3-button w3-deep-orange w3-hover-deep-orange"><i class="fa fa-home"></i></a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-deep-orange w3-hover-deep-orange"><i class="fa fa-home"></i></a>
+      <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small">Resume</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Template Button</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" onclick="navCollapse()">&#9776;</a>
+    </div>
+
+    <div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
       <a href="./cv.html" class="w3-bar-item w3-button">Resume</a>
       <a href="#" class="w3-bar-item w3-button">Projects</a>
       <a href="#" class="w3-bar-item w3-button">Template Button</a>
     </div>
+
+
   </div>
 
   <br><br>
-  <div class="w3-container">
-    <p>
-      This is the home page.
-    </p>
-  </div>
 
+<p>Lorem ipsum dolor</p>
+
+<script>
+function navCollapse() {
+  var x = document.getElementById("mobileNav");
+  if(x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 
